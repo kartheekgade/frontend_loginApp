@@ -19,7 +19,7 @@ class Register extends Component {
 	submitHandler = e => {
 		e.preventDefault();
 		console.log(this.state);
-		axios.post("http://localhost:3000/user/register",this.state)
+		axios.post("http://localhost:4000/user/register",this.state)
 		.then(response =>{
 			console.log(response);
 		}).catch(error => {
